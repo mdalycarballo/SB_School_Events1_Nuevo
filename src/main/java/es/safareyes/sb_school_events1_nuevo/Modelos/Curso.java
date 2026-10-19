@@ -9,11 +9,16 @@ public class Curso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Integer id;
+    public Integer id;
 
     @Column(name = "nombre")
-    private String nombre;
+    public String nombre;
 
     @Column(name = "nivel")
-    private String nivel;
+    public String nivel;
+
+    @Override
+    public String toString() {
+        return "Curso{id=" + id + ", nombre='" + nombre + "', nivel='" + nivel + "'}";
+    }
 }
