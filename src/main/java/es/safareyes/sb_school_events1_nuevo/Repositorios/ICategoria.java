@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface ICategoria extends JpaRepository<Categoria, Integer> {
     List<Categoria> findAllByOrderByNombreAsc();
+
+    List<Categoria> findByNombreContainingIgnoreCase(String nombre);
 }
