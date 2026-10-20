@@ -10,6 +10,7 @@ import java.util.Optional;
 
 @Repository
 public interface IUsuario extends JpaRepository<Usuario, Integer> {
+
     Optional<Usuario> findByEmail(String email);
 
     @EntityGraph(attributePaths = {"curso"})
@@ -20,4 +21,7 @@ public interface IUsuario extends JpaRepository<Usuario, Integer> {
 
     @EntityGraph(attributePaths = {"curso"})
     List<Usuario> findByCurso_Id(Integer cursoId);
+
+    @EntityGraph(attributePaths = {"curso"})
+    List<Usuario> findByNombreContainingIgnoreCase(String nombre);
 }

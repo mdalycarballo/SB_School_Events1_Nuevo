@@ -9,7 +9,7 @@ import java.util.List;
 
 @Repository
 public interface ICambio_evento extends JpaRepository<Cambio_evento, Integer> {
+
     @EntityGraph(attributePaths = {"evento"})
     List<Cambio_evento> findByEvento_Id(Integer eventoId);
-
 }

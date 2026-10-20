@@ -32,10 +32,6 @@ public class Inscripcion {
     @Column(name = "asistio")
     public Boolean asistio;
 
-    // Requerido por JPA
-    public Inscripcion() {
-    }
-
     @Override
     public String toString() {
         return "Inscripcion{id=" + id + ", usuario=" + (usuario != null ? usuario.nombre : "null") + ", evento=" + (evento != null ? evento.titulo : "null") + ", estado='" + estado + "', tipo='" + tipo + "'}";

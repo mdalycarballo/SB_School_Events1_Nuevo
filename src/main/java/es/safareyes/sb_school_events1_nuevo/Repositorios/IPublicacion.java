@@ -9,6 +9,13 @@ import java.util.List;
 
 @Repository
 public interface IPublicacion extends JpaRepository<Publicacion, Integer> {
-    @EntityGraph(attributePaths = {"fotos", "usuario"})
+
+    @EntityGraph(attributePaths = {"evento", "usuario"})
     List<Publicacion> findByEvento_Id(Integer eventoId);
+
+    @EntityGraph(attributePaths = {"evento", "usuario"})
+    List<Publicacion> findByUsuario_Id(Integer usuarioId);
+
+    @EntityGraph(attributePaths = {"evento", "usuario"})
+    List<Publicacion> findByTextoContainingIgnoreCase(String texto);
 }

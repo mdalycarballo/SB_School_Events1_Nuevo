@@ -9,6 +9,10 @@ import java.util.List;
 
 @Repository
 public interface IEvento_curso extends JpaRepository<Evento_curso, Integer> {
+
+    @EntityGraph(attributePaths = {"evento", "curso"})
     List<Evento_curso> findByEvento_Id(Integer eventoId);
-    boolean existsByEvento_IdAndCurso_Id(Integer eventoId, Integer cursoId);
+
+    @EntityGraph(attributePaths = {"evento", "curso"})
+    List<Evento_curso> findByCurso_Id(Integer cursoId);
 }

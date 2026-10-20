@@ -10,8 +10,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Timestamp;
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SpringBootTest
 @Transactional
@@ -755,20 +757,19 @@ public class Test_SE {
     }
 
     //-------------------TEST INDIVIDUALES-----------------//
-
-    @Autowired private ICurso cursoRepository;
-    @Autowired private ICategoria categoriaRepository;
-    @Autowired private ILugar lugarRepository;
-    @Autowired private IRequisitos requisitosRepository;
-    @Autowired private IUsuario usuarioRepository;
-    @Autowired private IEvento eventoRepository;
-    @Autowired private ICambio_evento cambioEventoRepository;
-    @Autowired private IEvento_curso eventoCursoRepository;
-    @Autowired private IEvento_requisito eventoRequisitoRepository;
-    @Autowired private IInscripcion inscripcionRepository;
-    @Autowired private INotificacion notificacionRepository;
-    @Autowired private IPublicacion publicacionRepository;
-    @Autowired private IFoto_publicacion fotoPublicacionRepository;
+    //@Autowired private ICurso cursoRepository;
+    //@Autowired private ICategoria categoriaRepository;
+    //@Autowired private ILugar lugarRepository;
+    //@Autowired private IRequisitos requisitosRepository;
+    //@Autowired private IUsuario usuarioRepository;
+    //@Autowired private IEvento eventoRepository;
+    //@Autowired private ICambio_evento cambioEventoRepository;
+    //@Autowired private IEvento_curso eventoCursoRepository;
+    //@Autowired private IEvento_requisito eventoRequisitoRepository;
+    //@Autowired private IInscripcion inscripcionRepository;
+    //@Autowired private INotificacion notificacionRepository;
+    //@Autowired private IPublicacion publicacionRepository;
+    //@Autowired private IFoto_publicacion fotoPublicacionRepository;
 
     @Test
     @DisplayName("Pruebas de consultas en ICurso")
@@ -859,14 +860,15 @@ public class Test_SE {
     @Test
     @DisplayName("Pruebas de consultas en IEvento")
     void testConsultasEvento() {
+        // 1. Declarar e instanciar dependencias requeridas por Evento
         Curso c = new Curso();
-        c.nombre = "Curso Evento";
+        c.nombre = "Curso Evento " + System.currentTimeMillis();
         c.nivel = "FP Superior";
         c = cursoRepository.save(c);
 
         Usuario u = new Usuario();
         u.nombre = "Organizador Evento";
-        u.email = "org_ev@safareyes.es";
+        u.email = "org_ev_" + System.currentTimeMillis() + "@safareyes.es";
         u.password = "secret";
         u.tipo = "ORGANIZADOR";
         u.estado = "ACTIVO";
@@ -875,21 +877,22 @@ public class Test_SE {
         u = usuarioRepository.save(u);
 
         Categoria cat = new Categoria();
-        cat.nombre = "Música";
+        cat.nombre = "Música " + System.currentTimeMillis();
         cat.icono = "music.png";
         cat.color = "#00FF00";
         cat = categoriaRepository.save(cat);
 
         Lugar l = new Lugar();
-        l.nombre = "Teatro";
+        l.nombre = "Teatro " + System.currentTimeMillis();
         l.aforoMax = 100;
         l = lugarRepository.save(l);
 
         Timestamp inicio = new Timestamp(System.currentTimeMillis());
         Timestamp fin = new Timestamp(System.currentTimeMillis() + 3600000);
 
+        // 2. Crear y guardar el Evento
         Evento e = new Evento();
-        e.titulo = "Concierto Primavera";
+        e.titulo = "Concierto Primavera " + System.currentTimeMillis();
         e.descripcion = "Musica en vivo";
         e.estado = "PUBLICADO";
         e.fechaInicio = inicio;
@@ -900,6 +903,7 @@ public class Test_SE {
         e.lugar = l;
         e = eventoRepository.save(e);
 
+        // 3. Probar las consultas del repositorio
         assertFalse(eventoRepository.findByCategoria_Id(cat.id).isEmpty());
         assertFalse(eventoRepository.findByCreador_Id(u.id).isEmpty());
         assertFalse(eventoRepository.findByLugar_Id(l.id).isEmpty());
@@ -918,7 +922,7 @@ public class Test_SE {
         cambio.evento = e;
         cambio.cambios = "Cambio de hora";
         cambio.fecha = new Timestamp(System.currentTimeMillis());
-        cambioRepository.save(cambio);
+        cambioEventoRepository.save(cambio);
 
         List<Cambio_evento> lista = cambioEventoRepository.findByEvento_Id(e.id);
         assertFalse(lista.isEmpty());
@@ -1012,7 +1016,7 @@ public class Test_SE {
         p = publicacionRepository.save(p);
 
         assertFalse(publicacionRepository.findByEvento_Id(e.id).isEmpty());
-        assertFalse(publicacionRepository.findByAutor_Id(u.id).isEmpty());
+        assertFalse(publicacionRepository.findByUsuario_Id(u.id).isEmpty());
     }
 
     @Test
@@ -1078,5 +1082,4 @@ public class Test_SE {
         e.lugar = l;
         return eventoRepository.save(e);
     }
-}
 }
