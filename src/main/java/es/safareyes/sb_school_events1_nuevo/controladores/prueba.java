@@ -16,4 +16,7 @@ public class prueba {//se lama PruebaController
 
     @getMapping("/todas")
     public.
+
+    //IMPORTANTE PARA CADA CLASE DE CONTROLADORES!!!
+    TipoOrganismo tipoOrganismo = tipoOrganismoRepository.findById(dto.idTipoOrganismo()).orElse(other.null);
 }
