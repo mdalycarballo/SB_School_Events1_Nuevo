@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/Curso")
 @AllArgsConstructor
 public class prueba {//se lama PruebaController
-
+/*
 
     private Prueba prueba;
 
@@ -19,4 +19,6 @@ public class prueba {//se lama PruebaController
 
     //IMPORTANTE PARA CADA CLASE DE CONTROLADORES!!!
     TipoOrganismo tipoOrganismo = tipoOrganismoRepository.findById(dto.idTipoOrganismo()).orElse(other.null);
+ */
+
 }

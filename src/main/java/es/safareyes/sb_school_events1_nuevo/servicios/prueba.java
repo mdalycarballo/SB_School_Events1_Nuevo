@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class prueba {//CursoService
-
+/*
     private ICurso cursoRepository;
 
     @Service
@@ -40,5 +40,5 @@ public class prueba {//CursoService
         return ListaRespuesta;
     }
 
-
+*/
 }
