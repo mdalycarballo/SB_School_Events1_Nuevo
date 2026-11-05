@@ -40,5 +40,19 @@ public class prueba {//CursoService
         return ListaRespuesta;
     }
 
+//IMPORTANTE EXCEPCIONES Y ERRORES DENTRO DE LOS SERVICIOS!!!
+
+    @RestControllerService
+    @Slf4j
+
+    public class ErrorGlobalController {
+
+        @ExceptionHandler(ReglaNegocioException.class){
+            return consstruir(HttpStatus.NOT_FOUND, "Regla de negocio no cumplida" , e.gerMessage();
+        }
+
+        @ExceptionHandler(
+
+    }
 */
 }

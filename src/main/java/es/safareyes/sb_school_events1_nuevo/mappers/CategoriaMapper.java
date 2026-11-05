@@ -1,8 +1,8 @@
-package es.safareyes.sb_school_events1_nuevo.mapper;
+package es.safareyes.sb_school_events1_nuevo.mappers;
 
-import es.safareyes.sb_school_events1_nuevo.dto.request.ReqCategoriaDTO;
-import es.safareyes.sb_school_events1_nuevo.dto.response.ResCategoriaDTO;
-import es.safareyes.sb_school_events1_nuevo.entity.Categoria;
+import es.safareyes.sb_school_events1_nuevo.Modelos.Categoria;
+import es.safareyes.sb_school_events1_nuevo.dtos.request.ReqCategoriaDTO;
+import es.safareyes.sb_school_events1_nuevo.dtos.response.ResCategoriaDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
