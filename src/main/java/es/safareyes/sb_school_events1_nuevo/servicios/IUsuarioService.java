@@ -9,4 +9,6 @@ public interface IUsuarioService {
     List<ResUsuarioDTO> listar();
     ResUsuarioDTO buscarPorId(Integer id);
     ResUsuarioDTO crear(ReqUsuarioDTO request);
+    ResUsuarioDTO actualizar(Integer id, ReqUsuarioDTO request);
+    void eliminar(Integer id);
 }
