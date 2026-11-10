@@ -116,13 +116,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>3.4.3</version>
                 <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
+                    <!-- Evita la inspección profunda de clases incompatibles con JDK 25 -->
+                    <mainClass>es.safareyes.sb_school_events1_nuevo.SbSchoolEvents1NuevoApplication</mainClass>
                 </configuration>
             </plugin>
 

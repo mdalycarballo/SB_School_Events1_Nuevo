@@ -12,6 +12,8 @@ import java.util.Optional;
 public interface IUsuario extends JpaRepository<Usuario, Integer> {
 
     Optional<Usuario> findByEmail(String email);
+    Optional<Usuario> findByNombre(String nombre);
+    boolean existsByEmail(String email);
 
     @EntityGraph(attributePaths = {"curso"})
     List<Usuario> findByTipo(String tipo);
