@@ -1,8 +1,8 @@
-package es.safareyes.sb_school_events1_nuevo.Repositorios;
+package es.safareyes.sb_school_events1_nuevo.repositorios;
 
 
 
-import es.safareyes.sb_school_events1_nuevo.Modelos.Lugar;
+import es.safareyes.sb_school_events1_nuevo.modelos.Lugar;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

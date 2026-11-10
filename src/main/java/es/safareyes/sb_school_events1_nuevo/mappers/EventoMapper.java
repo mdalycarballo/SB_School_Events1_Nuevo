@@ -1,6 +1,6 @@
 package es.safareyes.sb_school_events1_nuevo.mappers;
 
-import es.safareyes.sb_school_events1_nuevo.Modelos.Evento;
+import es.safareyes.sb_school_events1_nuevo.modelos.Evento;
 import es.safareyes.sb_school_events1_nuevo.dtos.request.ReqEventoDTO;
 import es.safareyes.sb_school_events1_nuevo.dtos.response.ResEventoDetalleDTO;
 import es.safareyes.sb_school_events1_nuevo.dtos.response.ResEventoResumenDTO;

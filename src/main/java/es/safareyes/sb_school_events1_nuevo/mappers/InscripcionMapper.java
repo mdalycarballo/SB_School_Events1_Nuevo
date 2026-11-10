@@ -1,6 +1,6 @@
 package es.safareyes.sb_school_events1_nuevo.mappers;
 
-import es.safareyes.sb_school_events1_nuevo.Modelos.Inscripcion;
+import es.safareyes.sb_school_events1_nuevo.modelos.Inscripcion;
 import es.safareyes.sb_school_events1_nuevo.dtos.response.ResInscripcionDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

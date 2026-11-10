@@ -1,6 +1,6 @@
 package es.safareyes.sb_school_events1_nuevo.mappers;
 
-import es.safareyes.sb_school_events1_nuevo.Modelos.Lugar;
+import es.safareyes.sb_school_events1_nuevo.modelos.Lugar;
 import es.safareyes.sb_school_events1_nuevo.dtos.request.ReqLugarDTO;
 import es.safareyes.sb_school_events1_nuevo.dtos.response.ResLugarDTO;
 import org.mapstruct.Mapper;

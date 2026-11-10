@@ -1,6 +1,6 @@
 package es.safareyes.sb_school_events1_nuevo.mappers;
 
-import es.safareyes.sb_school_events1_nuevo.Modelos.Usuario;
+import es.safareyes.sb_school_events1_nuevo.modelos.Usuario;
 import es.safareyes.sb_school_events1_nuevo.dtos.request.ReqUsuarioDTO;
 import es.safareyes.sb_school_events1_nuevo.dtos.response.ResUsuarioDTO;
 import org.mapstruct.Mapper;

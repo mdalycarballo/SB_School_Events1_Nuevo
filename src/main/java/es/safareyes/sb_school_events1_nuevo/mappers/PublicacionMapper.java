@@ -1,6 +1,6 @@
 package es.safareyes.sb_school_events1_nuevo.mappers;
 
-import es.safareyes.sb_school_events1_nuevo.Modelos.Publicacion;
+import es.safareyes.sb_school_events1_nuevo.modelos.Publicacion;
 import es.safareyes.sb_school_events1_nuevo.dtos.request.ReqPublicacionDTO;
 import es.safareyes.sb_school_events1_nuevo.dtos.response.ResPublicacionDTO;
 import org.mapstruct.Mapper;

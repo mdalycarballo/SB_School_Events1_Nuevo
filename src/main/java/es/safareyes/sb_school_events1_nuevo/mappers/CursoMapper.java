@@ -1,6 +1,6 @@
 package es.safareyes.sb_school_events1_nuevo.mappers;
 
-import es.safareyes.sb_school_events1_nuevo.Modelos.Curso;
+import es.safareyes.sb_school_events1_nuevo.modelos.Curso;
 import es.safareyes.sb_school_events1_nuevo.dtos.request.ReqCursoDTO;
 import es.safareyes.sb_school_events1_nuevo.dtos.response.ResCursoDTO;
 import org.mapstruct.Mapper;

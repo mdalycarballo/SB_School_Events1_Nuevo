@@ -1,4 +1,4 @@
-package es.safareyes.sb_school_events1_nuevo.Modelos;
+package es.safareyes.sb_school_events1_nuevo.modelos;
 
 import jakarta.persistence.*;
 import java.sql.Timestamp;

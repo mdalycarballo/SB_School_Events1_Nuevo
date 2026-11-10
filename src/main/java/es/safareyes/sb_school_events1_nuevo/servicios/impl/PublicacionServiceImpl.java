@@ -1,11 +1,11 @@
 package es.safareyes.sb_school_events1_nuevo.servicios.impl;
 
-import es.safareyes.sb_school_events1_nuevo.Modelos.Evento;
-import es.safareyes.sb_school_events1_nuevo.Modelos.Publicacion;
-import es.safareyes.sb_school_events1_nuevo.Modelos.Usuario;
-import es.safareyes.sb_school_events1_nuevo.Repositorios.IEvento;
-import es.safareyes.sb_school_events1_nuevo.Repositorios.IPublicacion;
-import es.safareyes.sb_school_events1_nuevo.Repositorios.IUsuario;
+import es.safareyes.sb_school_events1_nuevo.modelos.Evento;
+import es.safareyes.sb_school_events1_nuevo.modelos.Publicacion;
+import es.safareyes.sb_school_events1_nuevo.modelos.Usuario;
+import es.safareyes.sb_school_events1_nuevo.repositorios.IEvento;
+import es.safareyes.sb_school_events1_nuevo.repositorios.IPublicacion;
+import es.safareyes.sb_school_events1_nuevo.repositorios.IUsuario;
 import es.safareyes.sb_school_events1_nuevo.dtos.request.ReqPublicacionDTO;
 import es.safareyes.sb_school_events1_nuevo.dtos.response.ResPublicacionDTO;
 import es.safareyes.sb_school_events1_nuevo.mappers.PublicacionMapper;

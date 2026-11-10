@@ -1,7 +1,7 @@
 package es.safareyes.sb_school_events1_nuevo;
 
-import es.safareyes.sb_school_events1_nuevo.Modelos.*;
-import es.safareyes.sb_school_events1_nuevo.Repositorios.*;
+import es.safareyes.sb_school_events1_nuevo.modelos.*;
+import es.safareyes.sb_school_events1_nuevo.repositorios.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

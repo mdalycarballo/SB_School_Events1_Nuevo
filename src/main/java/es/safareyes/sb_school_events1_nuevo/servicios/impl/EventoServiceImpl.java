@@ -1,13 +1,13 @@
 package es.safareyes.sb_school_events1_nuevo.servicios.impl;
 
-import es.safareyes.sb_school_events1_nuevo.Modelos.Categoria;
-import es.safareyes.sb_school_events1_nuevo.Modelos.Evento;
-import es.safareyes.sb_school_events1_nuevo.Modelos.Lugar;
-import es.safareyes.sb_school_events1_nuevo.Modelos.Usuario;
-import es.safareyes.sb_school_events1_nuevo.Repositorios.ICategoria;
-import es.safareyes.sb_school_events1_nuevo.Repositorios.IEvento;
-import es.safareyes.sb_school_events1_nuevo.Repositorios.ILugar;
-import es.safareyes.sb_school_events1_nuevo.Repositorios.IUsuario;
+import es.safareyes.sb_school_events1_nuevo.modelos.Categoria;
+import es.safareyes.sb_school_events1_nuevo.modelos.Evento;
+import es.safareyes.sb_school_events1_nuevo.modelos.Lugar;
+import es.safareyes.sb_school_events1_nuevo.modelos.Usuario;
+import es.safareyes.sb_school_events1_nuevo.repositorios.ICategoria;
+import es.safareyes.sb_school_events1_nuevo.repositorios.IEvento;
+import es.safareyes.sb_school_events1_nuevo.repositorios.ILugar;
+import es.safareyes.sb_school_events1_nuevo.repositorios.IUsuario;
 import es.safareyes.sb_school_events1_nuevo.dtos.request.ReqEventoDTO;
 import es.safareyes.sb_school_events1_nuevo.dtos.response.ResEventoResumenDTO;
 import es.safareyes.sb_school_events1_nuevo.mappers.EventoMapper;
@@ -15,7 +15,6 @@ import es.safareyes.sb_school_events1_nuevo.servicios.IEventoService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.sql.Timestamp;
 import java.util.List;
 
 @Service

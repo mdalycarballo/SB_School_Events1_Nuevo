@@ -1,9 +1,9 @@
 package es.safareyes.sb_school_events1_nuevo.servicios.impl;
 
-import es.safareyes.sb_school_events1_nuevo.Modelos.Curso;
-import es.safareyes.sb_school_events1_nuevo.Modelos.Usuario;
-import es.safareyes.sb_school_events1_nuevo.Repositorios.ICurso;
-import es.safareyes.sb_school_events1_nuevo.Repositorios.IUsuario;
+import es.safareyes.sb_school_events1_nuevo.modelos.Curso;
+import es.safareyes.sb_school_events1_nuevo.modelos.Usuario;
+import es.safareyes.sb_school_events1_nuevo.repositorios.ICurso;
+import es.safareyes.sb_school_events1_nuevo.repositorios.IUsuario;
 import es.safareyes.sb_school_events1_nuevo.dtos.request.ReqUsuarioDTO;
 import es.safareyes.sb_school_events1_nuevo.dtos.response.ResUsuarioDTO;
 import es.safareyes.sb_school_events1_nuevo.mappers.UsuarioMapper;

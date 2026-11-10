@@ -1,11 +1,11 @@
 package es.safareyes.sb_school_events1_nuevo.servicios.impl;
 
-import es.safareyes.sb_school_events1_nuevo.Modelos.Evento;
-import es.safareyes.sb_school_events1_nuevo.Modelos.Inscripcion;
-import es.safareyes.sb_school_events1_nuevo.Modelos.Usuario;
-import es.safareyes.sb_school_events1_nuevo.Repositorios.IEvento;
-import es.safareyes.sb_school_events1_nuevo.Repositorios.IInscripcion;
-import es.safareyes.sb_school_events1_nuevo.Repositorios.IUsuario;
+import es.safareyes.sb_school_events1_nuevo.modelos.Evento;
+import es.safareyes.sb_school_events1_nuevo.modelos.Inscripcion;
+import es.safareyes.sb_school_events1_nuevo.modelos.Usuario;
+import es.safareyes.sb_school_events1_nuevo.repositorios.IEvento;
+import es.safareyes.sb_school_events1_nuevo.repositorios.IInscripcion;
+import es.safareyes.sb_school_events1_nuevo.repositorios.IUsuario;
 import es.safareyes.sb_school_events1_nuevo.dtos.request.ReqInscripcionDTO;
 import es.safareyes.sb_school_events1_nuevo.dtos.response.ResInscripcionDTO;
 import es.safareyes.sb_school_events1_nuevo.mappers.InscripcionMapper;
