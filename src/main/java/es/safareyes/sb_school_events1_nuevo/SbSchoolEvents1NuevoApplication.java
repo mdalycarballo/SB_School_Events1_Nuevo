@@ -2,10 +2,12 @@ package es.safareyes.sb_school_events1_nuevo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "es.safareyes.sb_school_events1_nuevo")
+@EnableJpaRepositories(basePackages = "es.safareyes.sb_school_events1_nuevo")
+@EntityScan(basePackages = "es.safareyes.sb_school_events1_nuevo")
 public class SbSchoolEvents1NuevoApplication {
 
     public static void main(String[] args) {
